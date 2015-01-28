@@ -217,13 +217,13 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'd3c7fe18f293542d1bd4336a20d241ba3',
-      'username' => 'u80nn5QGEdAHq',
-      'password' => 'psXj0zsSbtziK',
-      'host' => '10.4.12.46',
+      'database' => 'df195d7ad12fb4d93868f50ddd9fb6959',
+      'username' => 'uwrOCOyUO8Hfl',
+      'password' => 'pYwI20YDUnLjB',
+      'host' => '10.4.26.93',
       'port' => '3306',
       'driver' => 'mysql',
-      'prefix' => 'jrbxinxi_',
+      'prefix' => 'chengan',
     ),
   ),
 );
