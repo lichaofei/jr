@@ -16,7 +16,7 @@ function file_field_info() {
       'settings' => array(
         'display_field' => 0,
         'display_default' => 0,
-        'uri_scheme' => variable_get('file_uri_scheme'),
+        'uri_scheme' => variable_get('file_uri_scheme','http'),
       ),
       'instance_settings' => array(
         'file_extensions' => 'txt',
