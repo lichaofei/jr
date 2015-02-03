@@ -128,7 +128,7 @@ class ImageStylesPathAndUrlTestCase extends DrupalWebTestCase {
    * Test image_style_path().
    */
   function testImageStylePath() {
-    $scheme = 'public';
+    $scheme = 'http';
     $actual = image_style_path($this->style_name, "$scheme://foo/bar.gif");
     $expected = "$scheme://styles/" . $this->style_name . "/$scheme/foo/bar.gif";
     $this->assertEqual($actual, $expected, 'Got the path for a file URI.');
