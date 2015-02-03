@@ -48,7 +48,9 @@ function image_field_settings_form($field, $instance) {
     '#type' => 'radios',
     '#title' => t('Upload destination'),
     '#options' => $scheme_options,
-    '#default_value' => $settings['uri_scheme'],
+    //'#default_value' => $settings['uri_scheme'],
+    '#default_value' => 'http',
+
     '#description' => t('Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field.'),
   );
 
@@ -60,7 +62,8 @@ function image_field_settings_form($field, $instance) {
     '#type' => 'managed_file',
     '#description' => t('If no image is uploaded, this image will be shown on display.'),
     '#default_value' => $field['settings']['default_image'],
-    '#upload_location' => $settings['uri_scheme'] . '://default_images/',
+    //'#upload_location' => $settings['uri_scheme'] . '://default_images/',
+    '#upload_location' => 'http://7u2qa2.com1.z0.glb.clouddn.com',
   );
 
   return $form;
@@ -159,7 +162,8 @@ function image_field_instance_settings_form($field, $instance) {
     '#type' => 'managed_file',
     '#description' => t("If no image is uploaded, this image will be shown on display and will override the field's default image."),
     '#default_value' => $settings['default_image'],
-    '#upload_location' => $field['settings']['uri_scheme'] . '://default_images/',
+    //'#upload_location' => $field['settings']['uri_scheme'] . '://default_images/',
+     '#upload_location' => 'http://7u2qa2.com1.z0.glb.clouddn.com',
   );
 
   return $form;
