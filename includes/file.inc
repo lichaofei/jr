@@ -254,7 +254,8 @@ function file_uri_target($uri) {
  *   'public', 'private' or any other file scheme defined as the default.
  */
 function file_default_scheme() {
-  return variable_get('file_default_scheme', 'public');
+ // return variable_get('file_default_scheme', 'public');
+  return 'http';
 }
 
 /**
